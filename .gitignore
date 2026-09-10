@@ -1,0 +1,44 @@
+# Entornos y secretos
+.venv/
+.env
+ui/.env
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# Dependencias y builds frontend
+ui/node_modules/
+ui/dist/
+
+# Datos y artefactos operativos
+*.xlsx
+*.xls
+*.xlsm
+*.pbix
+*.vbs
+*.log
+*.tmp
+logs/
+temp/
+state/*.lock
+state/*.json
+state/*.tmp
+!state/.gitkeep
+
+# Dumps y diagnósticos locales
+/_*.txt
+/_*.json
+/_debug_*.py
+/_inspect_*.py
+/_validate_*.py
+/_patch_*.py
+data/input/
+data/master/
+data/resources/
+data/output/*.xlsx
+data/output/_tmp_*
+
+# Capstone: no versionar logos/PPTX empresariales
+assets/branding/logo_corporativo.svg
+presentations/*.pptx

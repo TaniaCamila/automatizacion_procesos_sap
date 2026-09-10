@@ -1,0 +1,12 @@
+pandas>=2.0
+openpyxl>=3.1
+python-calamine>=0.3
+numpy>=1.26
+PyYAML>=6.0
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.0
+pywin32==312
+
+# Desarrollo / pruebas
+pytest>=8.0
