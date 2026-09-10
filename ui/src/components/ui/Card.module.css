@@ -1,0 +1,15 @@
+.card {
+  height: auto;
+}
+
+.pad-sm {
+  padding: var(--space-3);
+}
+
+.pad-md {
+  padding: var(--space-4);
+}
+
+.pad-lg {
+  padding: var(--space-6);
+}

@@ -1,0 +1,9 @@
+{
+  "dashboard_name": "Dashboard Tesorería — Pagos Moneda Extranjera (FBL1N)",
+  "fecha_actualizacion": "2026-07-29 15:07:50",
+  "ultima_carga_datos": "2026-07-29 14:35:01",
+  "fuente": "C:\\Users\\usuario_ejemplo\\Downloads\\Automatizacion_FBL1N\\Automatizacion_FBL1N\\data\\output\\MODELO_POWERBI.xlsx",
+  "logo_relativo": "recursos/logo_corporativo.svg",
+  "boton_cta": "Ingresar al Dashboard",
+  "destino_cta": "P01 Resumen Ejecutivo"
+}

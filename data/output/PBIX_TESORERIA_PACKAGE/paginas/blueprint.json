@@ -1,0 +1,165 @@
+{
+  "ef": "EF-08",
+  "fase": "PREPARACION_PAQUETE",
+  "pbix_generado": false,
+  "dax_implementado": false,
+  "dashboard": "Dashboard Tesorería — Pagos Moneda Extranjera (FBL1N)",
+  "fuente_unica": "MODELO_POWERBI.xlsx",
+  "fuente_prohibida": "Archivo Solicitud Pago Extranjero",
+  "hojas_importar": [
+    "FACT_PAGOS",
+    "DIM_SOCIEDAD",
+    "DIM_PROVEEDOR",
+    "DIM_FECHA",
+    "DIM_MONEDA"
+  ],
+  "pages": [
+    {
+      "id": "P00",
+      "name": "INICIO",
+      "role": "portada",
+      "slicers": "no",
+      "contenido": "Logo · Nombre Dashboard · Fecha actualización · Última carga · Botón Ingresar → P01"
+    },
+    {
+      "id": "P01",
+      "name": "Resumen Ejecutivo",
+      "role": "analitica",
+      "slicers": "globales",
+      "contenido": "KPIs · Monto por Sociedad · Variante · Mes · Top proveedores"
+    },
+    {
+      "id": "P02",
+      "name": "Análisis por Proveedor",
+      "role": "analitica",
+      "slicers": "globales+Acreedor",
+      "contenido": "Matriz Proveedor→Acreedor→Mes · Top N · Detalle"
+    },
+    {
+      "id": "P03",
+      "name": "Análisis por Concepto",
+      "role": "analitica",
+      "slicers": "globales+Provision",
+      "contenido": "Matriz PROVISION_CONTABLE→Mes · Barras · Tabla"
+    },
+    {
+      "id": "P04",
+      "name": "Análisis por Sociedad",
+      "role": "analitica",
+      "slicers": "globales",
+      "contenido": "Matriz Sociedad→Mes · Columnas · Tabla"
+    },
+    {
+      "id": "P05",
+      "name": "Análisis por Referencia",
+      "role": "analitica",
+      "slicers": "globales+Referencia",
+      "contenido": "Matriz REFERENCIA_DERIVADA · Tabla operacional · Variante"
+    },
+    {
+      "id": "P06",
+      "name": "Temporalidad de Pagos",
+      "role": "analitica",
+      "slicers": "globales+Trimestre",
+      "contenido": "Evolución Mes/Año · Matriz temporal · Tabla fechas"
+    },
+    {
+      "id": "P07",
+      "name": "Detalle Operacional",
+      "role": "analitica",
+      "slicers": "globales",
+      "contenido": "Tabla completa FACT_PAGOS (11 columnas)"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "FACT_PAGOS[SOCIEDAD]",
+      "to": "DIM_SOCIEDAD[SOCIEDAD]",
+      "cardinality": "N:1"
+    },
+    {
+      "from": "FACT_PAGOS[ACREEDOR]",
+      "to": "DIM_PROVEEDOR[ACREEDOR]",
+      "cardinality": "N:1"
+    },
+    {
+      "from": "FACT_PAGOS[FECHA_PA25USD]",
+      "to": "DIM_FECHA[FECHA]",
+      "cardinality": "N:1"
+    },
+    {
+      "from": "FACT_PAGOS[MONEDA]",
+      "to": "DIM_MONEDA[MONEDA]",
+      "cardinality": "N:1"
+    }
+  ],
+  "global_slicers": [
+    "Sociedad → DIM_SOCIEDAD[SOCIEDAD]",
+    "Año → FACT_PAGOS[AÑO_PAGO]",
+    "Mes → FACT_PAGOS[MES_PAGO]",
+    "Proveedor → DIM_PROVEEDOR[NOMBRE_BENEFICIARIO]",
+    "Variante → FACT_PAGOS[VARIANTE]"
+  ],
+  "nav_order_analitica": [
+    "Resumen",
+    "Proveedor",
+    "Concepto",
+    "Sociedad",
+    "Referencia",
+    "Temporalidad",
+    "Detalle"
+  ],
+  "medidas": [
+    {
+      "nombre": "Procesos SAP",
+      "descripcion": "Conteo de filas FACT_PAGOS",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Monto Total USD",
+      "descripcion": "Suma MONTO_USD",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Monto Promedio USD",
+      "descripcion": "Monto Total / Procesos SAP",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Procesos con PA25USD",
+      "descripcion": "Conteo con FECHA_PA25USD no vacío",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Procesos sin PA25USD",
+      "descripcion": "Conteo con FECHA_PA25USD vacío",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Cobertura PA25USD %",
+      "descripcion": "Con PA25USD / Procesos SAP",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Sociedades activas",
+      "descripcion": "Distinct SOCIEDAD",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Proveedores activos",
+      "descripcion": "Distinct ACREEDOR",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Conceptos activos",
+      "descripcion": "Distinct PROVISION_CONTABLE",
+      "estado": "PENDIENTE_DAX"
+    },
+    {
+      "nombre": "Referencias distintas",
+      "descripcion": "Distinct REFERENCIA_DERIVADA",
+      "estado": "PENDIENTE_DAX"
+    }
+  ],
+  "spec_ef07": "docs/EF07_DASHBOARD_POWERBI_SPEC.md"
+}

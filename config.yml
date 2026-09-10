@@ -1,0 +1,17 @@
+# Plantilla de configuración general (sin credenciales).
+# Las rutas y secretos operativos viven en .env (no versionado).
+
+project:
+  name: operations_analytics
+  description: Automatizacion de procesos SAP FBL1N (Capstone)
+
+paths:
+  # Ejemplos genéricos; sobrescribir vía .env en el entorno autorizado
+  input_dir: C:\Ruta\Entrada
+  output_dir: C:\Ruta\Salida
+  project_root: C:\Ruta\Proyecto
+
+features:
+  fbl1n_future_enabled: true
+  mail_send_weekday: 4
+  compensation_cutoff_mode: max_source_date

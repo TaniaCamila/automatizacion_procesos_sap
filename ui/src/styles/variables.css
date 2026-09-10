@@ -1,0 +1,93 @@
+:root {
+  /* Brand — CBO Operations Analytics */
+  --color-brand-900: #0b1a2b;
+  --color-brand-800: #12263d;
+  --color-brand-700: #1a3654;
+  --color-brand-600: #21507a;
+  --color-brand-500: #2b6cb0;
+  --color-brand-100: #e8f1fa;
+  --color-brand-50: #f3f8fc;
+
+  /* Neutrals */
+  --color-surface: #ffffff;
+  --color-canvas: #f5f7fa;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-text: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #ffffff;
+
+  /* Semantic */
+  --color-success: #0f766e;
+  --color-success-bg: #ccfbf1;
+  --color-warning: #b45309;
+  --color-warning-bg: #fef3c7;
+  --color-danger: #b91c1c;
+  --color-danger-bg: #fee2e2;
+  --color-info: #0369a1;
+  --color-info-bg: #e0f2fe;
+
+  /* Status dots */
+  --color-status-ok: #16a34a;
+  --color-status-warn: #d97706;
+  --color-status-offline: #94a3b8;
+  --color-status-dev: #64748b;
+
+  /* Typography */
+  --font-sans: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Mono", "JetBrains Mono", Consolas, monospace;
+
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.45;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-full: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.12);
+
+  /* Layout chrome */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 68px;
+  --topbar-height: 56px;
+  --page-max-width: 1440px;
+
+  /* Breakpoint reference (CSS custom properties cannot drive media queries). */
+  --breakpoint-notebook: 1280px;
+  --breakpoint-compact: 900px;
+
+  /* Motion */
+  --ease: 180ms ease;
+  --z-sidebar: 40;
+  --z-topbar: 50;
+}

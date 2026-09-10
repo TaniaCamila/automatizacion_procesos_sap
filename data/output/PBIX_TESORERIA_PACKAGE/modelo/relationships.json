@@ -1,0 +1,22 @@
+[
+  {
+    "from": "FACT_PAGOS[SOCIEDAD]",
+    "to": "DIM_SOCIEDAD[SOCIEDAD]",
+    "cardinality": "N:1"
+  },
+  {
+    "from": "FACT_PAGOS[ACREEDOR]",
+    "to": "DIM_PROVEEDOR[ACREEDOR]",
+    "cardinality": "N:1"
+  },
+  {
+    "from": "FACT_PAGOS[FECHA_PA25USD]",
+    "to": "DIM_FECHA[FECHA]",
+    "cardinality": "N:1"
+  },
+  {
+    "from": "FACT_PAGOS[MONEDA]",
+    "to": "DIM_MONEDA[MONEDA]",
+    "cardinality": "N:1"
+  }
+]

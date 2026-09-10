@@ -1,0 +1,106 @@
+{
+  "name": "Tesoreria FBL1N Corporativo",
+  "dataColors": [
+    "#0B3A6E",
+    "#1F6AA5",
+    "#1B7A4E",
+    "#6B7280",
+    "#D6E6F5",
+    "#D9F0E4",
+    "#2F343A",
+    "#B45309"
+  ],
+  "foreground": "#2F343A",
+  "foregroundNeutralSecondary": "#6B7280",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F3F4F6",
+  "backgroundNeutral": "#D6E6F5",
+  "tableAccent": "#0B3A6E",
+  "good": "#1B7A4E",
+  "neutral": "#6B7280",
+  "bad": "#B45309",
+  "maximum": "#0B3A6E",
+  "center": "#1F6AA5",
+  "minimum": "#D6E6F5",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI",
+      "color": "#0B3A6E"
+    },
+    "title": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0B3A6E"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#2F343A"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#6B7280"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#D6E6F5" } }, "radius": 4 }],
+        "title": [{ "show": true, "fontColor": { "solid": { "color": "#0B3A6E" } }, "fontSize": 12, "fontFamily": "Segoe UI Semibold" }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#0B3A6E" } }, "fontSize": 24, "fontFamily": "Segoe UI Semibold" }],
+        "categoryLabels": [{ "show": true, "color": { "solid": { "color": "#6B7280" } } }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "columnHeaders": [{
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "backColor": { "solid": { "color": "#0B3A6E" } },
+          "fontFamily": "Segoe UI Semibold"
+        }],
+        "values": [{
+          "fontColorPrimary": { "solid": { "color": "#2F343A" } },
+          "backColorPrimary": { "solid": { "color": "#FFFFFF" } },
+          "fontColorSecondary": { "solid": { "color": "#2F343A" } },
+          "backColorSecondary": { "solid": { "color": "#F3F4F6" } }
+        }]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "columnHeaders": [{
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "backColor": { "solid": { "color": "#0B3A6E" } }
+        }],
+        "rowHeaders": [{
+          "fontColor": { "solid": { "color": "#2F343A" } },
+          "backColor": { "solid": { "color": "#D6E6F5" } }
+        }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "items": [{
+          "fontColor": { "solid": { "color": "#2F343A" } },
+          "background": { "solid": { "color": "#FFFFFF" } }
+        }],
+        "header": [{
+          "fontColor": { "solid": { "color": "#0B3A6E" } }
+        }]
+      }
+    },
+    "page": {
+      "*": {
+        "outspace": [{ "color": { "solid": { "color": "#F3F4F6" } } }],
+        "background": [{ "color": { "solid": { "color": "#F3F4F6" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

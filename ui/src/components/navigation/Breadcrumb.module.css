@@ -1,0 +1,24 @@
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.link {
+  color: var(--color-text-secondary);
+}
+
+.link:hover {
+  color: var(--color-brand-600);
+}
+
+.sep {
+  color: var(--color-text-muted);
+}
+
+.current {
+  color: var(--color-text);
+  font-weight: var(--weight-medium);
+}

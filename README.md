@@ -2,8 +2,8 @@
 
 Proyecto Capstone 2026 de Ingeniería en Informática, Duoc UC, sede Alameda.
 
-> **Inicio del proyecto:** 13 de julio de 2026  
-> **Estado técnico:** solución funcional y en operación controlada  
+> **Inicio del proyecto:** 13 de julio de 2026
+> **Estado técnico:** solución funcional y en operación controlada
 > **Estado académico al 10 de septiembre de 2026:** Fase 2, semana 9
 
 ## Descripción
@@ -134,6 +134,37 @@ automatizacion_procesos_sap/
    ```
 
 La ejecución productiva solo debe realizarse en un entorno autorizado y después de superar las validaciones correspondientes.
+
+## Operación diaria controlada
+
+El script `scripts/run_diario.py` es el **wrapper de ejecución diaria**: orquesta la extracción SAP (VBS), valida el archivo futuro, libera bloqueos de Excel cuando corresponde y lanza el pipeline sin `--force`.
+
+Simulación segura (solo lectura; no ejecuta VBS, pipeline ni correo; no modifica el archivo productivo):
+
+```powershell
+.\.venv\Scripts\python.exe scripts\run_diario.py --simulate-vbs
+```
+
+Ejecución real controlada (requiere sesión interactiva de Windows con SAP GUI, Excel COM y Outlook COM disponibles según configuración):
+
+```powershell
+.\.venv\Scripts\python.exe scripts\run_diario.py
+```
+
+Registro de la tarea programada de Windows (lun–vie 09:00; usar ruta genérica del proyecto):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\instalar_tarea_diaria.ps1 -ProjectRoot C:\Ruta\Proyecto
+```
+
+Notas operativas:
+
+- La tarea se configura de **lunes a viernes a las 09:00** (hora local del equipo).
+- El correo automático se restringe al **viernes** mediante `MAIL_SEND_WEEKDAY=4` en `.env`.
+- El corte de compensación puede derivarse de la máxima fecha presente en la fuente con `FBL1N_COMPENSATION_CUTOFF_MODE=max_source_date`.
+- SAP GUI, Excel COM y Outlook COM requieren una **sesión interactiva** de Windows (equipo desbloqueado).
+- La simulación (`--simulate-vbs`) **no** ejecuta VBS, pipeline ni correo y **no** modifica el archivo productivo.
+- En documentación y ejemplos se usan únicamente rutas genéricas (`C:\Ruta\Proyecto`, `C:\Ruta\Entrada`, `C:\Ruta\Salida`).
 
 ## Integrantes y roles
 
