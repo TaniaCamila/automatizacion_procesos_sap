@@ -1,0 +1,98 @@
+{
+  "input": "C:\\Users\\cl183288210\\Downloads\\Documento 01 - Documento de Requerimientos Simplificado.docx",
+  "fonts_by_char_count": {},
+  "direct_run_formatting_runs": 115,
+  "direct_paragraph_formatting_paragraphs": 11,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 66,
+      "text": "Fecha",
+      "style": "Normal"
+    },
+    {
+      "para_index": 67,
+      "text": "Revisi\u00f3n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 68,
+      "text": "Autor",
+      "style": "Normal"
+    },
+    {
+      "para_index": 69,
+      "text": "Modificaci\u00f3n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 78,
+      "text": "Nombre Integrante del Equipo",
+      "style": "Normal"
+    },
+    {
+      "para_index": 79,
+      "text": "Rol Definido",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 6,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 9,
+        "run_text": "Documento validado por las partes en fecha: ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 18,
+        "run_text": "Replicar el punto \u00edntegramente del documento anterior",
+        "style": "Normal"
+      },
+      {
+        "para_index": 53,
+        "run_text": " ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 66,
+        "run_text": "Fecha",
+        "style": "Normal"
+      },
+      {
+        "para_index": 67,
+        "run_text": "Revisi\u00f3n",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

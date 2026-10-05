@@ -1,0 +1,98 @@
+{
+  "input": "C:\\Users\\cl183288210\\Downloads\\Documento 02 - Documento de Dise\u00f1o.docx",
+  "fonts_by_char_count": {},
+  "direct_run_formatting_runs": 9,
+  "direct_paragraph_formatting_paragraphs": 11,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 32,
+      "text": "Fecha",
+      "style": "Normal"
+    },
+    {
+      "para_index": 33,
+      "text": "Revisi\u00f3n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 34,
+      "text": "Autor",
+      "style": "Normal"
+    },
+    {
+      "para_index": 35,
+      "text": "Modificaci\u00f3n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 44,
+      "text": "Nombre Integrante del Equipo",
+      "style": "Normal"
+    },
+    {
+      "para_index": 45,
+      "text": "Rol Definido",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 6,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 9,
+        "run_text": "Documento validado por las partes en fecha: ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 32,
+        "run_text": "Fecha",
+        "style": "Normal"
+      },
+      {
+        "para_index": 33,
+        "run_text": "Revisi\u00f3n",
+        "style": "Normal"
+      },
+      {
+        "para_index": 34,
+        "run_text": "Autor",
+        "style": "Normal"
+      },
+      {
+        "para_index": 35,
+        "run_text": "Modificaci\u00f3n",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}
